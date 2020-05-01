@@ -71,3 +71,9 @@ def analyze(request):
 	if(charcount!= 'on' and extraspaceremover!= 'on' and spaceremover!= 'on'and newlineremover!='on' and fullcaps!='on' and removepunc != 'on'):
 		return HttpResponse('Error')
 	return render(request,'analyze.html',params)
+
+def about(request):
+	return render(request,'about.html')
+
+def contact(request):
+	return render(request,'contact.html')
